@@ -1,34 +1,43 @@
+:root {
+    --color-page: lightblue;
+    --color-text: #263445;
+    --color-heading: darkblue;
+    --color-muted: #526174;
+    --color-card: white;
+    --space-card: 2rem;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: lightblue;
-    color: #263445;
+    background-color: var(--color-page);
+    color: var(--color-text);
     font-family: "DM Sans", Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--color-heading);
     font-size: 2.25rem;
     line-height: 1.2;
     text-align: center;
 }
 
 p {
-    color: #526174;
+    color: var(--color-muted);
     font-size: 1.125rem;
     line-height: 1.7;
 }
 
 .card {
     max-width: 40rem;
-    margin: 2rem auto;
-    padding: 2rem;
+    margin: var(--space-card) auto;
+    padding: var(--space-card);
     border-radius: 0.75rem;
-    background-color: white;
+    background-color: var(--color-card);
     box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
 }
 
