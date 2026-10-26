@@ -4,12 +4,23 @@
 
 body {
     background-color: lightblue;
-    font-family: Arial;
+    color: #263445;
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 h1 {
     color: darkblue;
+    font-size: 2.25rem;
+    line-height: 1.2;
     text-align: center;
+}
+
+p {
+    color: #526174;
+    font-size: 1.125rem;
+    line-height: 1.7;
 }
 
 .card {
