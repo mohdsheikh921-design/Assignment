@@ -65,6 +65,21 @@
             min-height: calc(100vh - 64px);
             text-align: center;
         }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .card {
+            flex: 1 1 200px;
+            padding: 24px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -86,5 +101,20 @@
         <h1>Welcome to Our Website</h1>
         <p>Discover our services and get started today.</p>
     </main>
+
+    <section class="cards">
+        <article class="card">
+            <h2>Card 1</h2>
+            <p>This is the first card.</p>
+        </article>
+        <article class="card">
+            <h2>Card 2</h2>
+            <p>This is the second card.</p>
+        </article>
+        <article class="card">
+            <h2>Card 3</h2>
+            <p>This is the third card.</p>
+        </article>
+    </section>
 </body>
 </html>
