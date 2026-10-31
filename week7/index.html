@@ -106,6 +106,39 @@
             border-radius: 8px;
             background-color: white;
         }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px 20px;
+            }
+
+            .nav-right {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px 18px;
+            }
+
+            .banner {
+                min-height: calc(100vh - 220px);
+                padding: 40px 20px;
+            }
+
+            .banner h1 {
+                font-size: 36px;
+            }
+
+            .cards {
+                padding: 24px 20px;
+            }
+        }
+        
     </style>
 </head>
 <body>
