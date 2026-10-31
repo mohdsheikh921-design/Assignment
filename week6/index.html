@@ -47,8 +47,15 @@
         }
 
         main {
-            width: min(92%, 430px);
+            width: min(92%, 900px);
             margin: 48px auto;
+        }
+
+        .cards-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
         }
 
         .profile-card {
@@ -59,6 +66,31 @@
             overflow: hidden;
             background: white;
             box-shadow: 0 18px 40px rgb(30 64 175 / 16%);
+            flex: 1 1 390px;
+            max-width: 430px;
+        }
+
+        .profile-card.green-version {
+            border-color: #86efac;
+            box-shadow: 0 18px 40px rgb(22 101 52 / 16%);
+        }
+
+        .green-version .photo-wrap {
+            border-color: #16a34a;
+            background-color: #dcfce7;
+        }
+
+        .green-version h2 {
+            color: #14532d;
+        }
+
+        .green-version .role {
+            color: #16a34a;
+        }
+
+        .green-version .bio-box {
+            border-color: #86efac;
+            background-color: #f0fdf4;
         }
 
         .photo-wrap {
@@ -159,19 +191,35 @@
     </header>
 
     <main>
-        <article class="profile-card">
-            <div class="photo-wrap">
-                <img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8AB0E0TDLwVF3vC--HDd5xkbvERMUlM2hUd_wqbkIRw&amp;s=10" alt="Mohd Sakib profile photo">
-            </div>
+        <div class="cards-grid">
+            <article class="profile-card blue-version">
+                <div class="photo-wrap">
+                    <img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8AB0E0TDLwVF3vC--HDd5xkbvERMUlM2hUd_wqbkIRw&amp;s=10" alt="Mohd Sakib profile photo">
+                </div>
 
-            <h2>Mohd Sakib</h2>
-            <p class="role">Frontend Development Student</p>
+                <h2>Mohd Sakib</h2>
+                <p class="role">Frontend Development Student</p>
 
-            <p class="bio-box">
-                Mohd Sakib is a curious designer and developer who enjoys turning simple ideas into welcoming digital experiences. He likes learning HTML, CSS and JavaScript, especially how a well-planned box model and clear layout can make an interface easier to use.<br><br>
-                Outside class, Mohd Sakib explores accessibility, creates small personal projects, takes photographs and mentors new students. Scroll this box to read more about his work, goals and creative interests.
-            </p>
-        </article>
+                <p class="bio-box">
+                    Mohd Sakib is a curious designer and developer who enjoys turning simple ideas into welcoming digital experiences. He likes learning HTML, CSS and JavaScript, especially how a well-planned box model and clear layout can make an interface easier to use.<br><br>
+                    Outside class, Mohd Sakib explores accessibility, creates small personal projects, takes photographs and mentors new students. Scroll this box to read more about his work, goals and creative interests.
+                </p>
+            </article>
+
+            <article class="profile-card green-version">
+                <div class="photo-wrap">
+                    <img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8AB0E0TDLwVF3vC--HDd5xkbvERMUlM2hUd_wqbkIRw&amp;s=10" alt="Mohd Sakib profile photo">
+                </div>
+
+                <h2>Mohd Sakib</h2>
+                <p class="role">Frontend Development Student</p>
+
+                <p class="bio-box">
+                    Mohd Sakib is a curious designer and developer who enjoys turning simple ideas into welcoming digital experiences. He likes learning HTML, CSS and JavaScript, especially how a well-planned box model and clear layout can make an interface easier to use.<br><br>
+                    Outside class, Mohd Sakib explores accessibility, creates small personal projects, takes photographs and mentors new students. Scroll this box to read more about his work, goals and creative interests.
+                </p>
+            </article>
+        </div>
 
         <section class="box-model-note" aria-label="Box model lab note">
             <h2>DevTools Box Model Lab</h2>
