@@ -12,6 +12,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            display: grid;
         }
 
         img {
@@ -102,14 +103,13 @@
         }
 
         .cards {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr;
             gap: 20px;
             padding: 24px 20px;
         }
 
         .card {
-            flex: 1 1 100%;
             padding: 24px;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -144,10 +144,7 @@
 
             .cards {
                 padding: 32px;
-            }
-
-            .card {
-                flex-basis: calc(50% - 10px);
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -170,10 +167,7 @@
 
             .cards {
                 padding: 40px;
-            }
-
-            .card {
-                flex-basis: 200px;
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     </style>
