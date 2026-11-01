@@ -17,6 +17,10 @@
         }
 
         .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             padding: 20px;
             border: 1px solid #ccc;
             text-align: center;
@@ -41,10 +45,22 @@
 </head>
 <body>
     <div class="grid">
-        <div class="grid-item head">Header</div>
-        <div class="grid-item side">Sidebar</div>
-        <div class="grid-item main">Main</div>
-        <div class="grid-item foot">Footer</div>
+        <div class="grid-item head">
+            <span>⌂</span>
+            <span>Header</span>
+        </div>
+        <div class="grid-item side">
+            <span>☰</span>
+            <span>Sidebar</span>
+        </div>
+        <div class="grid-item main">
+            <span>▦</span>
+            <span>Main</span>
+        </div>
+        <div class="grid-item foot">
+            <span>ⓘ</span>
+            <span>Footer</span>
+        </div>
     </div>
 </body>
 </html>
